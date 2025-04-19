@@ -1,3 +1,20 @@
+PreRequirements for Quiz App:
+
+spring Intializer:
+-----------------
+jar
+java -17
+spring version -3.1
+mvn project
+
+dependencies:
+------------
+spring web
+spring Data JPA
+MYSQL Driver
+Lombok
+JDBC APi
+
 Swagger URL:
 ------------
 http://localhost:9000/swagger-ui.html

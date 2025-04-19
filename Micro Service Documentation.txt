@@ -1,0 +1,14 @@
+Micro service documentation for Quiz App:
+
+Pre requirements are
+
+Load balancer :
+	Let's us we have two quiz services then load balancer will decide which Quiz instance or service to be used at that point.
+
+Api Gateway:
+	It is a pass through layer and entry point for application from outside
+
+Registry:
+	It stores all the Ipaddress of other services
+	Let's us say now we are in quiz service and to create a quiz we need to connect to question service in which we need an ip to connect. We can use Registry to find the ipaddress of question to build a quiz.
+
