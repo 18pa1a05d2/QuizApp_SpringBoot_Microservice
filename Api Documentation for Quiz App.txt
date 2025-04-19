@@ -1,0 +1,143 @@
+Swagger URL:
+------------
+http://localhost:9000/swagger-ui.html
+http://localhost:9000/swagger-ui/index.html
+
+
+Api Documentation for Quiz App:
+--------------------------------
+
+Api : http://localhost:9000/question/add
+POST
+
+Body:
+Added successfully
+
+Api: http://localhost:9000/Quiz/create?category=Java&noOfQuestions=2&title=JavaQuiz
+POST
+
+Body:
+{"message":"Quiz Created"}
+
+Api:
+http://localhost:9000/Quiz/get/1
+GET
+
+Body:
+[
+    {
+        "id": 3,
+        "questionTitle": "Which component of Java is responsible for executing bytecode?",
+        "option1": "JVM",
+        "option2": "JRE",
+        "option3": "JDK",
+        "option4": "JIT"
+    },
+    {
+        "id": 6,
+        "questionTitle": "Maximum value for a byte in java?",
+        "option1": "100",
+        "option2": "127",
+        "option3": "255",
+        "option4": "999"
+    }
+]
+
+Api:
+http://localhost:9000/Quiz/submit/1
+POST
+
+[
+    {
+        "id":"3",
+        "response": "JVM"
+    },
+    {
+        "id":"6",
+        "response": "abc"
+    }
+]
+
+Body:
+1
+
+
+Api:
+http://localhost:9000/question/allQuestions
+GET
+
+response:
+
+[
+    {
+        "id": 1,
+        "questionTitle": "Which data type is used to create a variable that should store text in Java?",
+        "option1": "int",
+        "option2": "float",
+        "option3": "String",
+        "option4": "boolean",
+        "rightAnswer": "String",
+        "difficultyLevel": "Easy",
+        "category": "Java"
+    },
+    {
+        "id": 2,
+        "questionTitle": "Which keyword is used to define a function in Python?",
+        "option1": "def",
+        "option2": "function",
+        "option3": "func",
+        "option4": "define",
+        "rightAnswer": "def",
+        "difficultyLevel": "Medium",
+        "category": "Python"
+    },
+    {
+        "id": 3,
+        "questionTitle": "Which component of Java is responsible for executing bytecode?",
+        "option1": "JVM",
+        "option2": "JRE",
+        "option3": "JDK",
+        "option4": "JIT",
+        "rightAnswer": "JVM",
+        "difficultyLevel": "Hard",
+        "category": "Java"
+    },
+    {
+        "id": 4,
+        "questionTitle": "Which Python data type is used to store key-value pairs?",
+        "option1": "list",
+        "option2": "dict",
+        "option3": "set",
+        "option4": "array",
+        "rightAnswer": "dict",
+        "difficultyLevel": "Medium",
+        "category": "Python"
+    },
+    {
+        "id": 5,
+        "questionTitle": "Which function is used to print output in Python?",
+        "option1": "print()",
+        "option2": "echo()",
+        "option3": "console.log()",
+        "option4": "System.out.print()",
+        "rightAnswer": "print()",
+        "difficultyLevel": "Easy",
+        "category": "Python"
+    },
+    {
+        "id": 6,
+        "questionTitle": "Maximum value for a byte in java?",
+        "option1": "100",
+        "option2": "127",
+        "option3": "255",
+        "option4": "999",
+        "rightAnswer": "127",
+        "difficultyLevel": "Easy",
+        "category": "Java"
+    }
+]
+
+Api:
+
+
+
